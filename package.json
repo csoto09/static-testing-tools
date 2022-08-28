@@ -10,7 +10,8 @@
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
     "format": "yarn prettier --write ",
     "check-format": "yarn prettier --check",
-    "validate": "yarn check-types && yarn check-format && yarn lint && yarn build"
+    "validate": "yarn check-types && yarn check-format && yarn lint && yarn build",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
@@ -21,6 +22,7 @@
     "@typescript-eslint/parser": "^5.35.1",
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.0",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   }
